@@ -1,3 +1,5 @@
+@import './tailwind.css';
+
 .features {
   display: flex;
   align-items: center;
