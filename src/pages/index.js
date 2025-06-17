@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import useBrokenLinks from "@docusaurus/useBrokenLinks";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Components from '@site/src/components';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
