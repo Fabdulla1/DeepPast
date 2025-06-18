@@ -23,7 +23,12 @@ const sidebars = {
     {
       type: "category",
       label: "Data",
-      items: [],
+      items: [
+        { type: "doc", id: "data/akkadian" },
+        { type: "doc", id: "data/english" },
+        { type: "doc", id: "data/unicode" },
+        { type: "doc", id: "data/photos" },
+      ],
     },
   ],
 };
