@@ -30,6 +30,12 @@ const sidebars = {
         { type: "doc", id: "data/photos" },
       ],
     },
+    { type: "doc", id: "faq" },
+    {
+      type: "link",
+      label: "Discord",
+      href: "https://discord.gg/XtCMyTrVCF",
+    },
   ],
 };
 

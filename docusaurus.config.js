@@ -94,8 +94,8 @@ const config = {
             label: "Challenge",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://discord.gg/XtCMyTrVCF",
+            label: "Discord",
             position: "right",
           },
         ],
@@ -107,7 +107,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Challenge",
                 to: "/docs/intro",
               },
             ],
@@ -116,16 +116,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
+                href: "https://discord.gg/XtCMyTrVCF",
               },
             ],
           },
@@ -133,17 +125,13 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Deep Past Initiative`,
       },
       prism: {
         theme: prismThemes.github,

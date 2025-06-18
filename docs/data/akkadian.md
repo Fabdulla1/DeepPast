@@ -1,3 +1,1 @@
----
-title: "Akkadian Transliteration"
----
+# Akkadian Transliteration

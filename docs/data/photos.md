@@ -1,3 +1,1 @@
----
-title: "Image Photos / Segments"
----
+# Image Photos / Segments

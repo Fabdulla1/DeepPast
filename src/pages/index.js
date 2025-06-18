@@ -1,13 +1,26 @@
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import React, { useEffect } from "react";
-import useBrokenLinks from "@docusaurus/useBrokenLinks";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from "react";
 import Layout from "@theme/Layout";
-import Components from "@site/src/components";
 
-import Heading from "@theme/Heading";
 import "../css/custom.css";
+
+const tablets = [
+  {
+    title: "Aššur-nāda",
+    desc: "a headstrong son navigating the pressures of trade in Kanesh.",
+  },
+  {
+    title: "Aššur-idi",
+    desc: "his aging father in Aššur, torn between temple duties and family expectations.",
+  },
+  {
+    title: "Ištar-lamassi",
+    desc: "a daughter and diplomatic bridge, married into another merchant dynasty.",
+  },
+  {
+    title: "Puzur-Ištar",
+    desc: "her husband, carrying his father's legacy into a new generation of trade.",
+  },
+];
 
 const team = {
   challenge: [
@@ -38,41 +51,22 @@ const team = {
     },
   ],
 };
+
+const Link = ({ link }) => (
+  <div>
+    <a className="hover:no-underline inline-block fit-content" href={link.href}>
+      <h3 className="mb-0 text-xl font-medium transition-opacity duration-200 hover:opacity-70">
+        {link.name}&nbsp;&nbsp;
+        <span className="opacity-70">{link.title}</span>
+      </h3>
+    </a>
+  </div>
+);
+
 export default function Home() {
-  useBrokenLinks().collectAnchor("sponsors");
-  useBrokenLinks().collectAnchor("educelab-funders");
-  useBrokenLinks().collectAnchor("our-story");
-
-  useEffect(() => {
-    if (!globalThis.window) {
-      return;
-    }
-    const storyDivs = Array.from(
-      document.querySelectorAll("[id^='story-section']")
-    );
-    const imageDivs = Array.from(
-      document.querySelectorAll("[id^='story-image']")
-    );
-    const onScroll = () => {
-      const storyBounds = storyDivs.map((div) => getBounds(div));
-      const backgroundOpacities = storyBounds.map((bounds) =>
-        getBackgroundOpacity({
-          y: bounds.y - window.innerHeight / 2,
-          height: bounds.height,
-        })
-      );
-      imageDivs.forEach(
-        (story, index) =>
-          (story.style.opacity = backgroundOpacities[index] * 0.4)
-      );
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <Layout>
-      <div className="text-white ">
+      <div className="">
         <div className="z-20 relative">
           {/* Hero */}
           <section className="mb-24 md:mb:36">
@@ -143,7 +137,7 @@ export default function Home() {
           </section>
           {/* Story */}
           <section className="mb-24 md:mb-36">
-            <div className="container mx-auto z-30 relative text-black dark:text-white">
+            <div className="container mx-auto z-30 relative">
               <div className="flex flex-col py-8 md:py-16">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
                   🏺 Our Story
@@ -179,11 +173,20 @@ export default function Home() {
                   These are not myths. These are ledgers. Courtroom testimonies.
                   Heated arguments between fathers and sons. Tender messages
                   between husbands and wives. Each tablet records a moment in
-                  the life of real people: Their world was connected by caravans
-                  and sealed with trust—but also plagued by debt, distance, and
-                  disputes. Through their tablets, we glimpse negotiations,
-                  betrayals, reconciliations, and even rebellion. One family's
-                  rift could destabilize an entire economic alliance.
+                  the life of real people:
+                  <ul className="list-disc pl-6 mt-5">
+                    {tablets.map((tablet) => (
+                      <li className="mb-3" key={tablet.title}>
+                        <span className="font-bold">{tablet.title}</span>,{" "}
+                        {tablet.desc}
+                      </li>
+                    ))}
+                  </ul>
+                  Their world was connected by caravans and sealed with
+                  trust—but also plagued by debt, distance, and disputes.
+                  Through their tablets, we glimpse negotiations, betrayals,
+                  reconciliations, and even rebellion. One family's rift could
+                  destabilize an entire economic alliance.
                   <br />
                   <br />
                   And yet… most of these voices remain unread.
@@ -219,7 +222,7 @@ export default function Home() {
           </section>
           {/* Team */}
           <section>
-            <div className="container mx-auto z-30 relative text-black dark:text-white">
+            <div className="container mx-auto z-30 relative">
               <div className="py-10">
                 <h1 className="hidden md:block text-4xl md:text-7xl font-black leading-none tracking-tighter ">
                   Team
@@ -230,16 +233,7 @@ export default function Home() {
                       Deep Past Challenge Team
                     </h3>
                     {team.challenge.map((t, i) => (
-                      <a
-                        key={i}
-                        href={t.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-lg font-medium text-blue-400 hover:underline mb-2"
-                      >
-                        {t.name} - {t.title}
-                        <div></div>
-                      </a>
+                      <Link link={t} key={i} />
                     ))}
                   </div>
                 </div>
