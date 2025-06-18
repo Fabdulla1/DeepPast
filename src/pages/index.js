@@ -81,7 +81,7 @@ export default function Home() {
                     className="text-3xl md:text-5xl drop-shadow-lg"
                     style={{
                       background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
+                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d57617 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -128,7 +128,7 @@ export default function Home() {
                 backgroundImage: `
                   linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
                   linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%),
-                  url('/img/tower_of_babel.png'')
+                  url('/img/tower_of_babel.png')
                 `,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="container mx-auto z-30 relative">
               <div className="flex flex-col py-8 md:py-16">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
-                  🏺 Our Story
+                  Our Story
                   <br />
                 </h1>
                 <div className="max-w-6xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
@@ -148,7 +148,7 @@ export default function Home() {
                     className="text-2xl font-bold"
                     style={{
                       background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
+                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d59c17 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
