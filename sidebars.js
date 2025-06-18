@@ -34,8 +34,23 @@ const sidebars = {
       label: 'Team',
       items: ['home'],
     },
+    {
+      type: "category",
+      label: "Data",
+      items: [
+        { type: "doc", id: "data/akkadian" },
+        { type: "doc", id: "data/english" },
+        { type: "doc", id: "data/unicode" },
+        { type: "doc", id: "data/photos" },
+      ],
+    },
+    { type: "doc", id: "faq" },
+    {
+      type: "link",
+      label: "Discord",
+      href: "https://discord.gg/XtCMyTrVCF",
+    },
   ],
-   
 };
 
 export default sidebars;

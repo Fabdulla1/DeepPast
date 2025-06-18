@@ -1,14 +1,26 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import React, { useEffect } from "react";
-import useBrokenLinks from "@docusaurus/useBrokenLinks";
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Components from '@site/src/components';
+import React from "react";
+import Layout from "@theme/Layout";
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
+import "../css/custom.css";
 
+const tablets = [
+  {
+    title: "Aššur-nāda",
+    desc: "a headstrong son navigating the pressures of trade in Kanesh.",
+  },
+  {
+    title: "Aššur-idi",
+    desc: "his aging father in Aššur, torn between temple duties and family expectations.",
+  },
+  {
+    title: "Ištar-lamassi",
+    desc: "a daughter and diplomatic bridge, married into another merchant dynasty.",
+  },
+  {
+    title: "Puzur-Ištar",
+    desc: "her husband, carrying his father's legacy into a new generation of trade.",
+  },
+];
 
 const team = {
   challenge: [
@@ -39,41 +51,22 @@ const team = {
     },
   ],
 };
+
+const Link = ({ link }) => (
+  <div>
+    <a className="hover:no-underline inline-block fit-content" href={link.href}>
+      <h3 className="mb-0 text-xl font-medium transition-opacity duration-200 hover:opacity-70">
+        {link.name}&nbsp;&nbsp;
+        <span className="opacity-70">{link.title}</span>
+      </h3>
+    </a>
+  </div>
+);
+
 export default function Home() {
-  useBrokenLinks().collectAnchor("sponsors");
-  useBrokenLinks().collectAnchor("educelab-funders");
-  useBrokenLinks().collectAnchor("our-story");
-
-  useEffect(() => {
-    if (!globalThis.window) {
-      return;
-    }
-    const storyDivs = Array.from(
-      document.querySelectorAll("[id^='story-section']")
-    );
-    const imageDivs = Array.from(
-      document.querySelectorAll("[id^='story-image']")
-    );
-    const onScroll = () => {
-      const storyBounds = storyDivs.map((div) => getBounds(div));
-      const backgroundOpacities = storyBounds.map((bounds) =>
-        getBackgroundOpacity({
-          y: bounds.y - window.innerHeight / 2,
-          height: bounds.height,
-        })
-      );
-      imageDivs.forEach(
-        (story, index) =>
-          (story.style.opacity = backgroundOpacities[index] * 0.4)
-      );
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <Layout>
-      <div className="text-white ">
+      <div className="">
         <div className="z-20 relative">
           {/* Hero */}
           <section className="relative h-[100vh] mb-24 md:mb-36 text-white"
@@ -99,7 +92,7 @@ export default function Home() {
                     className="text-3xl md:text-5xl drop-shadow-lg"
                     style={{
                       background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
+                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d57617 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -145,7 +138,7 @@ export default function Home() {
             <div className="container mx-auto z-30 relative text-black dark:text-white ">
               <div className="flex flex-col py-8 md:py-16 ">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
-                  🏺 Our Story
+                  Our Story
                   <br />
                 </h1>
                 <div className="max-w-6xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
@@ -153,7 +146,7 @@ export default function Home() {
                     className="text-2xl font-bold"
                     style={{
                       background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
+                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d59c17 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -179,7 +172,14 @@ export default function Home() {
                   Heated arguments between fathers and sons. Tender messages
                   between husbands and wives. Each tablet records a moment in
                   the life of real people:
-                  
+                  <ul className="list-disc pl-6 mt-5">
+                    {tablets.map((tablet) => (
+                      <li className="mb-3" key={tablet.title}>
+                        <span className="font-bold">{tablet.title}</span>,{" "}
+                        {tablet.desc}
+                      </li>
+                    ))}
+                  </ul>
                   Their world was connected by caravans and sealed with
                   trust—but also plagued by debt, distance, and disputes.
                   Through their tablets, we glimpse negotiations, betrayals,
