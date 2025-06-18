@@ -24,8 +24,8 @@ const team = {
     },
     {
       name: "Farhan Abdulla",
-      title: "Web Developer",
-      href: "https://example.com/",
+      title: "Data Scientist & ML Engineer",
+      href: "https://www.linkedin.com/in/farhan-abdulla/",
     },
     {
       name: "Ishan",
@@ -76,7 +76,18 @@ export default function Home() {
       <div className="text-white ">
         <div className="z-20 relative">
           {/* Hero */}
-          <section className="mb-24 md:mb:36">
+          <section className="relative h-[100vh] mb-24 md:mb-36 text-white"
+          style={{
+              backgroundImage: `
+                linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
+                linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
+                url('/img/tower_of_babel.png')
+              `,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+          }}
+          >
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
                 <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
@@ -128,19 +139,6 @@ export default function Home() {
                   "linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%)",
               }}
             />
-            {/* Background Image + Bottom shadow */}
-            <div
-              className="absolute inset-0 h-[75vh] z-0"
-              style={{
-                backgroundImage: `
-                  linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
-                  linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%),
-                  url('/img/tower_of_babel.png'')
-                `,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
           </section>
           {/* Story */}
           <section className="mb-24 md:mb-36">
