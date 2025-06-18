@@ -19,15 +19,13 @@ const sidebars = {
 
   // But you can create a sidebar manually
   mainSideBar: [
-    'intro',
-    'hello',
+    "intro",
     {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['hello'],
+      type: "category",
+      label: "Data",
+      items: [],
     },
   ],
-   
 };
 
 export default sidebars;

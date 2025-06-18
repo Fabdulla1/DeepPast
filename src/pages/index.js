@@ -1,14 +1,13 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
 import React, { useEffect } from "react";
 import useBrokenLinks from "@docusaurus/useBrokenLinks";
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Components from '@site/src/components';
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import Components from "@site/src/components";
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
+import Heading from "@theme/Heading";
+import "../css/custom.css";
 
 const team = {
   challenge: [
@@ -180,13 +179,11 @@ export default function Home() {
                   These are not myths. These are ledgers. Courtroom testimonies.
                   Heated arguments between fathers and sons. Tender messages
                   between husbands and wives. Each tablet records a moment in
-                  the life of real people:
-                  
-                  Their world was connected by caravans and sealed with
-                  trust—but also plagued by debt, distance, and disputes.
-                  Through their tablets, we glimpse negotiations, betrayals,
-                  reconciliations, and even rebellion. One family's rift could
-                  destabilize an entire economic alliance.
+                  the life of real people: Their world was connected by caravans
+                  and sealed with trust—but also plagued by debt, distance, and
+                  disputes. Through their tablets, we glimpse negotiations,
+                  betrayals, reconciliations, and even rebellion. One family's
+                  rift could destabilize an entire economic alliance.
                   <br />
                   <br />
                   And yet… most of these voices remain unread.
