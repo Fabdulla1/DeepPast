@@ -1,4 +1,4 @@
-@import './tailwind.css';
+@import '/src/css/tailwind.css';
 
 .features {
   display: flex;

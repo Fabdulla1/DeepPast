@@ -19,12 +19,20 @@ const sidebars = {
 
   // But you can create a sidebar manually
   mainSideBar: [
-    'intro',
-    'hello',
     {
       type: 'category',
-      label: 'Tutorial',
-      items: ['hello'],
+      label: 'Overview',
+      items: ['home'],
+    },
+    {
+      type: 'category',
+      label: 'Competition',
+      items: ['home'],
+    },
+    {
+      type: 'category',
+      label: 'Team',
+      items: ['home'],
     },
   ],
    

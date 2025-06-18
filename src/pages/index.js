@@ -142,8 +142,8 @@ export default function Home() {
           </section>
           {/* Story */}
           <section className="mb-24 md:mb-36">
-            <div className="container mx-auto z-30 relative text-black dark:text-white">
-              <div className="flex flex-col py-8 md:py-16">
+            <div className="container mx-auto z-30 relative text-black dark:text-white ">
+              <div className="flex flex-col py-8 md:py-16 ">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
                   🏺 Our Story
                   <br />
@@ -219,34 +219,6 @@ export default function Home() {
             </div>
           </section>
           {/* Team */}
-          <section>
-            <div className="container mx-auto z-30 relative text-black dark:text-white">
-              <div className="py-10">
-                <h1 className="hidden md:block text-4xl md:text-7xl font-black leading-none tracking-tighter ">
-                  Team
-                </h1>
-                <div className="flex flex-wrap">
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
-                    <h3 className="text-3xl font-black tracking-tighter">
-                      Deep Past Challenge Team
-                    </h3>
-                    {team.challenge.map((t, i) => (
-                      <a
-                        key={i}
-                        href={t.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-lg font-medium text-blue-400 hover:underline mb-2"
-                      >
-                        {t.name} - {t.title}
-                        <div></div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </div>
     </Layout>
