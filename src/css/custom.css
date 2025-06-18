@@ -66,3 +66,7 @@
   height: 40px;
   width: 40px;
 }
+
+.menu__list .menu__list {
+  margin-left: 1rem; /* Adjust value as desired */
+}
