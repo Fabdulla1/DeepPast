@@ -19,21 +19,7 @@ const sidebars = {
 
   // But you can create a sidebar manually
   mainSideBar: [
-    {
-      type: 'category',
-      label: 'Overview',
-      items: ['home'],
-    },
-    {
-      type: 'category',
-      label: 'Competition',
-      items: ['home'],
-    },
-    {
-      type: 'category',
-      label: 'Team',
-      items: ['home'],
-    },
+    { type: "doc", id: "intro" },
     {
       type: "category",
       label: "Data",
@@ -45,6 +31,7 @@ const sidebars = {
       ],
     },
     { type: "doc", id: "faq" },
+    { type: "doc", id: "team" },
     {
       type: "link",
       label: "Discord",

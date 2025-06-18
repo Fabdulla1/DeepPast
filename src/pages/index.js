@@ -69,8 +69,9 @@ export default function Home() {
       <div className="">
         <div className="z-20 relative">
           {/* Hero */}
-          <section className="relative h-[100vh] mb-24 md:mb-36 text-white"
-          style={{
+          <section
+            className="relative h-[100vh] mb-24 md:mb-36 text-white"
+            style={{
               backgroundImage: `
                 linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
                 linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
@@ -79,7 +80,7 @@ export default function Home() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-          }}
+            }}
           >
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
@@ -135,7 +136,7 @@ export default function Home() {
           </section>
           {/* Story */}
           <section className="mb-24 md:mb-36">
-            <div className="container mx-auto z-30 relative text-black dark:text-white ">
+            <div className="container mx-auto z-30 relative">
               <div className="flex flex-col py-8 md:py-16 ">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
                   Our Story
