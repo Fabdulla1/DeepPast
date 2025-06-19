@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
 
 import "../css/custom.css";
 
@@ -74,6 +75,14 @@ export default function Home() {
                   </span>
                   <br />
                 </p>
+                <div className="button">
+                    <Link
+                      className="bg-[radial-gradient(circle,_rgba(107,114,128,0.4)_0%,_rgba(107,114,128,1)_100%)] hover:bg-[rgba(107,114,128,0.8)] text-white font-semibold py-2 px-4 rounded transition max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight"
+                      to="/docs/intro"
+                    >
+                      Get Started!
+                    </Link>
+                  </div>
               </div>
 
               <div className="pt-8 mb-4">
@@ -84,6 +93,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            
             {/* Left shadow */}
             <div
               className="absolute inset-0 h-[90vh] z-10"
