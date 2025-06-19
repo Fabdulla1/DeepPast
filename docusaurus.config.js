@@ -94,6 +94,11 @@ const config = {
             label: "Challenge",
           },
           {
+            position: "left",
+            label: "Team",
+            to: "/team",
+          },
+          {
             href: "https://discord.gg/XtCMyTrVCF",
             label: "Discord",
             position: "right",

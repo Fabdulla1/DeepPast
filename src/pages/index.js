@@ -22,47 +22,6 @@ const tablets = [
   },
 ];
 
-const team = {
-  challenge: [
-    {
-      name: "Adam Anderson",
-      title: "Challenge Creator",
-      href: "https://example.com/",
-    },
-    {
-      name: "James Dinh",
-      title: "Web Developer",
-      href: "https://jamesdinh.me/",
-    },
-    {
-      name: "Farhan Abdulla",
-      title: "Data Scientist & ML Engineer",
-      href: "https://www.linkedin.com/in/farhan-abdulla/",
-    },
-    {
-      name: "Ishan",
-      title: "Research Fellow",
-      href: "https://example.com/",
-    },
-    {
-      name: "Taha",
-      title: "Research Fellow",
-      href: "https://example.com/",
-    },
-  ],
-};
-
-const Link = ({ link }) => (
-  <div>
-    <a className="hover:no-underline inline-block fit-content" href={link.href}>
-      <h3 className="mb-0 text-xl font-medium transition-opacity duration-200 hover:opacity-70">
-        {link.name}&nbsp;&nbsp;
-        <span className="opacity-70">{link.title}</span>
-      </h3>
-    </a>
-  </div>
-);
-
 export default function Home() {
   return (
     <Layout>
@@ -219,7 +178,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {/* Team */}
         </div>
       </div>
     </Layout>
