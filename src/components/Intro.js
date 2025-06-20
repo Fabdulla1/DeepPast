@@ -29,12 +29,8 @@ export default function Intro() {
       <div className="z-20 relative">
         {/* Story */}
         <section className="mb-24 md:mb-36">
-          <div className="container mx-auto z-30 relative">
-            <div className="flex flex-col py-8 md:py-16 ">
-              <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
-                Our Story
-                <br />
-              </h1>
+          <div className="container w-full px-0 mx-auto z-30 relative">
+            <div className="flex flex-col">
               <div className="max-w-6xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
                 <span
                   className="text-2xl font-bold"

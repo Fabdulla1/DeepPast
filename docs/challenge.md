@@ -4,7 +4,7 @@ title: "Deep Past Challenge"
 
 ## 1) Machine Translation: Akkadian Transliteration to English Translation (Text-to-Text)
 
-### Problem
+### Overview
 
 Old Assyrian texts are preserved in Latin-script transliterations of Akkadian, a morphologically rich, low-resource language written in SOV order. The goal of this task is to build a model that can translate clause-aligned sequences of transliterated Akkadian into modern English. The architecture could use neural machine translation (NMT) or LLMs or any other architecture and the best outcome will receive the prize. Unlike high-resource benchmarks, these texts include non-standard orthography, domain-specific vocabulary, and many rare tokens—making generalization especially challenging. Alignments are noisy or incomplete in parts of the dataset, and performance depends critically on literal, structure-preserving translation. The outcome: models that can reliably render ancient administrative records into English, enabling broader historical and linguistic access.
 
