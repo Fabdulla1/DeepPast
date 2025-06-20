@@ -36,17 +36,7 @@ export default function Intro() {
                 <br />
               </h1>
               <div className="max-w-6xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
-                <span
-                  className="text-2xl font-bold"
-                  style={{
-                    background:
-                      "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d59c17 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    textFillColor: "transparent",
-                  }}
-                >
+                <span className="text-2xl text-yellow-500 dark:text-yellow-500 font-bold">
                   4000 years ago, the world's first commercial civilization was
                   thriving. Now, it's time to let their voices speak again.
                 </span>

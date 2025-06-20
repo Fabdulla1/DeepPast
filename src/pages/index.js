@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useColorMode } from "@docusaurus/theme-common";
 
 import "../css/custom.css";
 import NavBtn from "../components/NavBtn";
@@ -24,83 +25,126 @@ const tablets = [
   },
 ];
 
+function LeftShadow() {
+  const { colorMode } = useColorMode();
+
+  // const lightShadow = `
+  //   linear-gradient(90deg, rgba(198, 198, 198, 0.8) 0%, rgba(255, 255, 255, 0) 80%),
+  //   linear-gradient(0deg, #ffffff 1%, rgba(255, 255, 255, 0) 30%)
+  // `;
+  const lightShadow = `
+    linear-gradient(
+      225deg,
+      rgba(198, 198, 198, 0.8) 0%,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0) 60%,
+      #ffffff 100%
+    )
+  `;
+
+  const darkShadow = `
+    linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
+    linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%)
+  `;
+
+  return (
+    <div
+      className="absolute inset-0 h-[90vh] z-10 pointer-events-none"
+      style={{
+        background: colorMode === "dark" ? darkShadow : lightShadow,
+      }}
+    />
+  );
+}
+
+function HeroSection() {
+  const { colorMode } = useColorMode();
+
+  const lightGradient = `
+    linear-gradient(to bottom, rgba(198, 198, 198, 0.3) 0%, #ffffff 90%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 80%)
+  `;
+
+  const darkGradient = `
+    linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
+    linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%)
+  `;
+
+  return (
+    <section
+      className={`relative h-[100vh] mb-24 md:mb-36 ${
+        colorMode === "dark" ? "text-white" : "text-black"
+      }`}
+      style={{
+        backgroundImage: `
+  ${colorMode === "dark" ? darkGradient : lightGradient},
+  url(${useBaseUrl("/img/tower_of_babel.png")})
+`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="container mx-auto z-20 relative mb-12">
+        <div className="md:pt-20 pt-8 mb-4">
+          <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
+            <div className="max-w-3xl">
+              Unearth the voices of ancient merchants. Translate the archives of
+              Mesopotamia.
+            </div>
+            <span
+              className="text-3xl md:text-5xl drop-shadow-lg"
+              style={{
+                background:
+                  "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d57617 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+              }}
+            >
+              <span className="whitespace-nowrap">Win Prizes.&nbsp;</span>
+              <span className="whitespace-nowrap">Make History.&nbsp;</span>
+            </span>
+          </h1>
+          <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
+            <span className="opacity-80 md:opacity-60">
+              The Deep Past Challenge is a machine learning and language
+              translation competition unlocking the 4,000-year-old trade records
+              of Assyrian merchants. Thousands of cuneiform texts remain
+              untranslated—help us bring their stories to light.
+            </span>
+            <br />
+          </p>
+          <NavBtn
+            text={"Deep Past Challenge"}
+            subtitle={"Take a peek at the Deep Past Challenge!"}
+            to={"/challenge/intro"}
+          />
+        </div>
+
+        <div className="pt-8 mb-4">
+          <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
+            <span id="our-story" className=" opacity-80 md:opacity-60">
+              Our story ↓
+            </span>
+          </p>
+        </div>
+      </div>
+
+      {/* Left shadow */}
+      <LeftShadow />
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <Layout>
       <div className="">
         <div className="z-20 relative">
           {/* Hero */}
-          <section
-            className="relative h-[100vh] mb-24 md:mb-36 text-white"
-            style={{
-              backgroundImage: `
-                linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
-                linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
-                url(${useBaseUrl("/img/tower_of_babel.png")})
-              `,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <div className="container mx-auto z-20 relative mb-12">
-              <div className="md:pt-20 pt-8 mb-4">
-                <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
-                  <div className="max-w-3xl">
-                    Unearth the voices of ancient merchants. Translate the
-                    archives of Mesopotamia.
-                  </div>
-                  <span
-                    className="text-3xl md:text-5xl drop-shadow-lg"
-                    style={{
-                      background:
-                        "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #f5d13f 0%, #d57617 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text",
-                      textFillColor: "transparent",
-                    }}
-                  >
-                    <span className="whitespace-nowrap">Win Prizes.&nbsp;</span>
-                    <span className="whitespace-nowrap">
-                      Make History.&nbsp;
-                    </span>
-                  </span>
-                </h1>
-                <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
-                  <span className="opacity-80 md:opacity-60">
-                    The Deep Past Challenge is a machine learning and language
-                    translation competition unlocking the 4,000-year-old trade
-                    records of Assyrian merchants. Thousands of cuneiform texts
-                    remain untranslated—help us bring their stories to light.
-                  </span>
-                  <br />
-                </p>
-                <NavBtn
-                  text={"Deep Past Challenge"}
-                  subtitle={"Take a peek at the Deep Past Challenge!"}
-                  to={"/challenge/intro"}
-                />
-              </div>
-
-              <div className="pt-8 mb-4">
-                <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
-                  <span id="our-story" className=" opacity-80 md:opacity-60">
-                    Our story ↓
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            {/* Left shadow */}
-            <div
-              className="absolute inset-0 h-[90vh] z-10"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),linear-gradient(0deg, #1C1A1D 1%, rgba(28, 26, 29, 0) 30%)",
-              }}
-            />
-          </section>
+          <HeroSection />
           {/* Story */}
           <section className="mb-24 md:mb-36">
             <div className="container mx-auto z-30 relative">
