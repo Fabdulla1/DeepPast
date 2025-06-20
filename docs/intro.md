@@ -3,11 +3,6 @@ title: "Intro"
 hide_table_of_contents: true
 ---
 
-
-<head>
-  <html data-theme="dark" />
-</head>
-
 ## 1) Machine Translation: Akkadian Transliteration to English Translation (Text-to-Text)
 
 ### Problem
