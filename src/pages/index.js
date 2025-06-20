@@ -1,8 +1,10 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import "../css/custom.css";
+import NavBtn from "../components/NavBtn";
 
 const tablets = [
   {
@@ -35,7 +37,7 @@ export default function Home() {
               backgroundImage: `
                 linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
                 linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%),
-                url('/img/tower_of_babel.png')
+                url(${useBaseUrl("/img/tower_of_babel.png")})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -75,14 +77,11 @@ export default function Home() {
                   </span>
                   <br />
                 </p>
-                <div className="button">
-                  <Link
-                    className="bg-[radial-gradient(circle,_rgba(107,114,128,0.4)_0%,_rgba(107,114,128,1)_100%)] hover:bg-[rgba(107,114,128,0.8)] text-white font-semibold py-2 px-4 rounded transition max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight"
-                    to="/docs/intro"
-                  >
-                    Get Started!
-                  </Link>
-                </div>
+                <NavBtn
+                  text={"Deep Past Challenge"}
+                  subtitle={"Take a peek at the Deep Past Challenge!"}
+                  to={"/docs/intro"}
+                />
               </div>
 
               <div className="pt-8 mb-4">

@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Deep Past Initiative",
   tagline: "Win Prizes. Make History.",
-  favicon: "img/babel-icon.ico",
+  favicon: "img/babel-icon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -78,6 +78,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "light", // Force light mode by default
+        disableSwitch: false, // Allow users to toggle if you want
+        respectPrefersColorScheme: false, // Don't auto-detect dark mode from system
+      },
       // Replace with your project's social card
       image: "img/babel-icon.png",
       navbar: {
@@ -106,14 +111,18 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
-            title: "Docs",
+            title: "Pages",
             items: [
               {
                 label: "Challenge",
                 to: "/docs/intro",
+              },
+              {
+                label: "Team",
+                to: "/team",
               },
             ],
           },
@@ -131,7 +140,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/Fabdulla1/DeepPast/tree/main",
               },
             ],
           },
