@@ -43,6 +43,7 @@ const sidebars = {
         { type: "doc", id: "tutorials/text_annotation" },
       ],
     },
+    { type: "doc", id: "legacy" },
     { type: "doc", id: "faq" },
     {
       type: "link",
