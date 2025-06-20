@@ -8,7 +8,7 @@ The Deep Past Initiative (DPI) is launching a series of machine learning competi
 
 Participants are invited to tackle four escalating challenges:
 
-1. [**Transliteration to Translation (Text-to-Text)**](./challenge.md)  
+1. [**Transliteration to Translation (Text-to-Text)**](./overview.md)  
    Translate Akkadian texts (in Latin-script transliteration) into English, aligning clause-level or sentence-level segments.
 
 2. **Unicode Codepoints to Transliteration (Script-to-Text)**  
