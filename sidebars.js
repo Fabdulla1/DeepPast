@@ -20,6 +20,7 @@ const sidebars = {
   // But you can create a sidebar manually
   mainSideBar: [
     { type: "doc", id: "intro" },
+    { type: "doc", id: "challenge" },
     {
       type: "category",
       label: "Data",
