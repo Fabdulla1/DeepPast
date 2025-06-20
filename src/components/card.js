@@ -1,14 +1,20 @@
 import React from "react";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
-const Card = ({ item }) => (
-  <div>
-    <a className="hover:no-underline inline-block fit-content" href={item.href}>
-      <h3 className="mb-0 text-xl font-medium transition-opacity duration-200 hover:opacity-70">
-        {item.name}&nbsp;&nbsp;
-        <span className="opacity-70">{item.title}</span>
-      </h3>
-    </a>
-  </div>
+const Card = ({ person }) => (
+  <a key={person.name} href={person.href} target="_blank">
+    <div className="flex items-center gap-x-6">
+      <img
+        alt=""
+        src={useBaseUrl(person.imageURL)}
+        className="size-16 rounded-full"
+      />
+      <div>
+        <h3 className="font-semibold tracking-tight mb-2">{person.name}</h3>
+        <p className="text-sm/6 font-semibold opacity-70">{person.title}</p>
+      </div>
+    </div>
+  </a>
 );
 
 export default Card;
