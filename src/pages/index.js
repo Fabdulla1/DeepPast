@@ -79,7 +79,7 @@ export default function Home() {
                 <NavBtn
                   text={"Deep Past Challenge"}
                   subtitle={"Take a peek at the Deep Past Challenge!"}
-                  to={"/docs/intro"}
+                  to={"/challenge/intro"}
                 />
               </div>
 

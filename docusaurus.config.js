@@ -117,7 +117,7 @@ const config = {
             items: [
               {
                 label: "Challenge",
-                to: "/docs/intro",
+                to: "/challenge/intro",
               },
               {
                 label: "Team",
