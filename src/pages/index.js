@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useColorMode } from "@docusaurus/theme-common";
+import  Highlight from "../components/Highlight"; 
 
 import "../css/custom.css";
 import NavBtn from "../components/NavBtn";
@@ -89,8 +90,7 @@ function HeroSection() {
         <div className="md:pt-20 pt-8 mb-4">
           <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
             <div className="max-w-3xl">
-              Unearth the voices of ancient merchants. Translate the archives of
-              Mesopotamia.
+              Unearth the Ancient Voices
             </div>
             <span
               className="text-3xl md:text-5xl drop-shadow-lg"
@@ -103,8 +103,7 @@ function HeroSection() {
                 textFillColor: "transparent",
               }}
             >
-              <span className="whitespace-nowrap">Win Prizes.&nbsp;</span>
-              <span className="whitespace-nowrap">Make History.&nbsp;</span>
+              <span className="whitespace-nowrap">Discover, Translate, and <br></br>Reimagine the Past&nbsp;</span>
             </span>
           </h1>
           <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
@@ -116,11 +115,6 @@ function HeroSection() {
             </span>
             <br />
           </p>
-          <NavBtn
-            text={"Deep Past Challenge"}
-            subtitle={"Take a peek at the Deep Past Challenge!"}
-            to={"/challenge/intro"}
-          />
         </div>
 
         <div className="pt-8 mb-4">
@@ -148,6 +142,12 @@ export default function Home() {
           {/* Story */}
           <section className="mb-24 md:mb-36">
             <div className="container mx-auto z-30 relative">
+              <Highlight
+                title="Deep Past Challenge"
+                description="Unlock the deep past of Mesopotamia"
+                link="/docs/intro.md"
+                imageUrl={useBaseUrl("/img/tablet.jpg")}
+              />
               <div className="flex flex-col py-8 md:py-16 ">
                 <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">
                   Our Story

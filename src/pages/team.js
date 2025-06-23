@@ -20,7 +20,7 @@ const team = [
   {
     name: "Farhan Abdulla",
     title: "Data Scientist & ML Engineer",
-    imageURL: "/img/docusaurus.png",
+    imageURL: "https://media.licdn.com/dms/image/v2/D5603AQFKVvptBG1_0w/profile-displayphoto-shrink_200_200/B56ZcY4lLCHoAk-/0/1748469175389?e=1756339200&v=beta&t=PAZ1dZcaFAUJ_xJq9aD5f_8hPDdKOkpZ_uTKnUGvdVs",
     href: "https://www.linkedin.com/in/farhan-abdulla/",
   },
   {
