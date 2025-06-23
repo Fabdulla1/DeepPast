@@ -46,8 +46,10 @@ export default function Home() {
               <div className="md:pt-20 pt-8 mb-4">
                 <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
                   <div className="max-w-3xl">
-                    Unearth the voices of ancient merchants. Translate the
-                    archives of Mesopotamia.
+                    Unearth the Deep Past. 
+                    <br></br>
+                    <br></br>
+                    Translate, discover, and reimagine the voices of ancient Mesopotamia.
                   </div>
                   <span
                     className="text-3xl md:text-5xl drop-shadow-lg"
