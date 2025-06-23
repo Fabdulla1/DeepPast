@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Deep Past Initiative",
   tagline: "Win Prizes. Make History.",
-  favicon: "img/babel-icon.ico",
+  favicon: "img/babel-icon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://Fabdulla1.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/deeppast",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "Fabdulla1", // Usually your GitHub org/user name.
+  projectName: "DeepPast", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -47,11 +47,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "challenge",
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/Fabdulla1/DeepPast/tree/main",
         },
         blog: {
           showReadingTime: true,
@@ -61,8 +61,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/Fabdulla1/DeepPast/tree/main",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -78,6 +77,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "light", // Force light mode by default
+        disableSwitch: false, // Allow users to toggle if you want
+        respectPrefersColorScheme: false, // Don't auto-detect dark mode from system
+      },
       // Replace with your project's social card
       image: "img/babel-icon.png",
       navbar: {
@@ -106,14 +110,18 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
-            title: "Docs",
+            title: "Pages",
             items: [
               {
                 label: "Challenge",
-                to: "/docs/intro",
+                to: "/challenge/intro",
+              },
+              {
+                label: "Team",
+                to: "/team",
               },
             ],
           },
@@ -131,7 +139,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/Fabdulla1/DeepPast/tree/main",
               },
             ],
           },
