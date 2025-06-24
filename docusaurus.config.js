@@ -102,11 +102,6 @@ const config = {
             label: "Team",
             to: "/team",
           },
-          {
-            href: "https://discord.gg/XtCMyTrVCF",
-            label: "Discord",
-            position: "right",
-          },
         ],
       },
       footer: {
