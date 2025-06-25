@@ -5,6 +5,7 @@ import { useColorMode } from "@docusaurus/theme-common";
 
 import "../css/custom.css";
 import Intro from "../components/Intro";
+import Highlight from "../components/Highlight";
 
 function LeftShadow() {
   const { colorMode } = useColorMode();
@@ -58,15 +59,15 @@ function HeroSection() {
       }`}
       style={{
         backgroundImage: `
-  ${colorMode === "dark" ? darkGradient : lightGradient},
-  url(${useBaseUrl("/img/tower_of_babel.png")})
-`,
+          ${colorMode === "dark" ? darkGradient : lightGradient},
+          url(${useBaseUrl("/img/tower_of_babel.png")})
+        `,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container mx-auto z-20 relative mb-12">
+      <div className="mainTitle container mx-auto z-20 relative mb-12">
         <div className="md:pt-20 pt-8 mb-4">
           <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
             <div className="max-w-3xl">Unearth the Ancient Voices</div>
@@ -115,6 +116,12 @@ export default function Home() {
           {/* Hero */}
           <HeroSection />
           {/* Story */}
+          <Highlight
+            title="Deep Past Challenge"
+            description="Unlock the deep past of Mesopotamia"
+            link="/docs/intro.md"
+            imageUrl={useBaseUrl("/img/tablet.jpg")}
+          />
           <Intro />
         </div>
       </div>

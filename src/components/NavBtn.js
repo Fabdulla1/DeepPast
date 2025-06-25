@@ -11,7 +11,7 @@ const NavBtn = ({ text, subtitle, to }) => {
         <div className="flex items-center gap-2 text-yellow-300 dark:text-yellow-500 font-semibold text-lg md:text-xl mb-2">
           <span>{text}</span>
           <svg
-            className="w-5 h-5 mt-0.5 transform transition-transform duration-300 group-hover:translate-x-1"
+            className="w-5 h-5 mt-1"
             fill="none"
             stroke="currentColor"
             strokeWidth={2}
@@ -25,7 +25,7 @@ const NavBtn = ({ text, subtitle, to }) => {
           </svg>
         </div>
         {subtitle && (
-          <div className="text-sm text-gray-100 dark:text-gray-400 opacity-80 -mt-1">
+          <div className="text-sm max-w-40 text-gray-100 dark:text-gray-400 opacity-80 -mt-1">
             {subtitle}
           </div>
         )}

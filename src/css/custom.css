@@ -33,6 +33,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Nav */
 .navbar {
   width: 100%;
   justify-content: space-between;
@@ -45,6 +46,11 @@
 .navbar__inner {
   max-width: 1536px;
   margin: auto;
+}
+
+/* Header */
+.mainTitle {
+  padding: 0;
 }
 
 .dark-title-gradient {
