@@ -1,7 +1,7 @@
 import React from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-import "../css/custom.css";
+import "../css/custom.scss";
 import NavBtn from "./NavBtn";
 
 const tablets = [

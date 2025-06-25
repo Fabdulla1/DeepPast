@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useColorMode } from "@docusaurus/theme-common";
 
-import "../css/custom.css";
+import "../css/custom.scss";
 import Highlight from "../components/Highlight";
 
 function LeftShadow() {
@@ -118,7 +118,7 @@ export default function Home() {
           <Highlight
             title="Deep Past Challenge"
             description="Unlock the deep past of Mesopotamia"
-            link="/docs/intro.md"
+            link="/challenge/intro"
             imageUrl={useBaseUrl("/img/tablet.jpg")}
           />
         </div>
