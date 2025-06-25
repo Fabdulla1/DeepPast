@@ -97,11 +97,6 @@ const config = {
             position: "left",
             label: "Challenge",
           },
-          {
-            position: "left",
-            label: "Team",
-            to: "/team",
-          },
         ],
       },
       footer: {
