@@ -1,5 +1,7 @@
 ---
-title: Intro
+title: Overview
+pagination_next: null
+pagination_prev: null
 ---
 
 import Intro from '@site/src/components/Intro'

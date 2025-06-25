@@ -4,7 +4,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useColorMode } from "@docusaurus/theme-common";
 
 import "../css/custom.css";
-import Intro from "../components/Intro";
 import Highlight from "../components/Highlight";
 
 function LeftShadow() {
@@ -96,7 +95,7 @@ function HeroSection() {
         <div className="pt-8 mb-4">
           <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
             <span id="our-story" className=" opacity-80 md:opacity-60">
-              Our story ↓
+              About ↓
             </span>
           </p>
         </div>
@@ -122,7 +121,6 @@ export default function Home() {
             link="/docs/intro.md"
             imageUrl={useBaseUrl("/img/tablet.jpg")}
           />
-          <Intro />
         </div>
       </div>
     </Layout>

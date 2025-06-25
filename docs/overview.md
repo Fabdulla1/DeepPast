@@ -1,5 +1,7 @@
 ---
 title: "Deep Past Challenge"
+pagination_next: null
+pagination_prev: null
 ---
 
 ## 🧩 Machine Translation: Akkadian Transliteration to English Translation (Text-to-Text)

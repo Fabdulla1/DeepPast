@@ -1,5 +1,7 @@
 ---
 title: English Translation
+pagination_next: null
+pagination_prev: null
 ---
 
 # English Translation

@@ -1,5 +1,7 @@
 ---
 title: Tablet Images / Segments
+pagination_next: null
+pagination_prev: null
 ---
 
 # Tablet Images and Segments

@@ -1,5 +1,7 @@
 ---
 title: Akkadian Text
+pagination_next: null
+pagination_prev: null
 ---
 
 # Akkadian Text in Transliteration

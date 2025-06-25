@@ -45,6 +45,7 @@ const sidebars = {
     },
     { type: "doc", id: "legacy" },
     { type: "doc", id: "faq" },
+    { type: "doc", id: "team" },
     {
       type: "link",
       label: "Discord",

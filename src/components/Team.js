@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Card from "../components/card";
+import Card from "./card";
 
 const team = [
   {
@@ -20,7 +20,8 @@ const team = [
   {
     name: "Farhan Abdulla",
     title: "Data Scientist & ML Engineer",
-    imageURL: "https://media.licdn.com/dms/image/v2/D5603AQFKVvptBG1_0w/profile-displayphoto-shrink_200_200/B56ZcY4lLCHoAk-/0/1748469175389?e=1756339200&v=beta&t=PAZ1dZcaFAUJ_xJq9aD5f_8hPDdKOkpZ_uTKnUGvdVs",
+    imageURL:
+      "https://media.licdn.com/dms/image/v2/D5603AQFKVvptBG1_0w/profile-displayphoto-shrink_200_200/B56ZcY4lLCHoAk-/0/1748469175389?e=1756339200&v=beta&t=PAZ1dZcaFAUJ_xJq9aD5f_8hPDdKOkpZ_uTKnUGvdVs",
     href: "https://www.linkedin.com/in/farhan-abdulla/",
   },
   {
@@ -39,21 +40,9 @@ const team = [
 
 const TeamList = () => {
   return (
-    <div className="py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty sm:text-4xl">
-            Meet the Deep Past Team
-          </h2>
-          <p className="mt-6 text-lg/8">
-            From data scientists to web developers, our team is dedicated to
-            unlocking the secrets of ancient stories untold.
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-        >
+    <div className="py-12">
+      <div className="mx-auto">
+        <ul role="list" className="flex flex-wrap w-full gap-x-20 gap-y-10">
           {team.map((person) => (
             <Card person={person} key={person.name} />
           ))}
@@ -64,9 +53,5 @@ const TeamList = () => {
 };
 
 export default function Team() {
-  return (
-    <Layout>
-      <TeamList />
-    </Layout>
-  );
+  return <TeamList />;
 }
