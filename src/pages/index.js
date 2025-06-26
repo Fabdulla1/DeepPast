@@ -4,7 +4,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import "../css/custom.scss";
 import Highlight from "../components/Highlight";
-import HeroSection from "../components/Hero";
+import Landing from "../components/Landing";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="">
         <div className="z-20 relative">
           {/* Hero */}
-          <HeroSection />
+          <Landing />
           {/* Story */}
           <Highlight
             title="Deep Past Challenge"
