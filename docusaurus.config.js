@@ -118,7 +118,7 @@ const config = {
               {
                 label: "Email",
                 href: "mailto: awl@deeppast.org",
-              }
+              },
             ],
           },
           {
@@ -129,9 +129,13 @@ const config = {
                 href: "https://discord.gg/XtCMyTrVCF",
               },
               {
-                label: "Github",
-                href: "https://github.com/Fabdulla1/DeepPast/tree/main"
-              }
+                label: "LinkedIn",
+                href: "https://example.com/",
+              },
+              {
+                label: "Twitter",
+                href: "https://example.com/",
+              },
             ],
           },
         ],

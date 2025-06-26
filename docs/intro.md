@@ -6,8 +6,6 @@ pagination_prev: null
 hide_table_of_contents: true
 ---
 
-import HeroSection from '@site/src/components/Hero'
-import Story from '@site/src/components/Story'
+import Intro from '@site/src/components/Intro'
 
-<HeroSection />
-<Story />
+<Intro />

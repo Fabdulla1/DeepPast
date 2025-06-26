@@ -78,7 +78,7 @@
   & .theme-doc-sidebar-container.docSidebarContainer_YfHR {
     position: absolute;
     z-index: 40;
-    display: block;
+    display: none;
     width: 100%;
 
     & .menu__list {
@@ -128,10 +128,13 @@
     & .mainTitle {
       margin-top: -1rem;
     }
-  }
 
-  & footer {
-    display: none;
+    & .theme-doc-footer {
+      max-width: 1536px;
+      margin: auto;
+      width: 100%;
+      padding: 0 2rem;
+    }
   }
 }
 
