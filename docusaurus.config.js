@@ -109,28 +109,28 @@ const config = {
                 label: "Challenge",
                 to: "/challenge/intro",
               },
-              {
-                label: "Team",
-                to: "/team",
-              },
             ],
           },
           {
-            title: "Community",
+            title: "Contact",
+            items: [
+              {
+                label: "Email",
+                href: "mailto: awl@deeppast.org",
+              }
+            ],
+          },
+          {
+            title: "Community/Social Media",
             items: [
               {
                 label: "Discord",
                 href: "https://discord.gg/XtCMyTrVCF",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
               {
-                label: "GitHub",
-                href: "https://github.com/Fabdulla1/DeepPast/tree/main",
-              },
+                label: "Github",
+                href: "https://github.com/Fabdulla1/DeepPast/tree/main"
+              }
             ],
           },
         ],
