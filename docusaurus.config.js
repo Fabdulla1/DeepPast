@@ -127,12 +127,7 @@ const config = {
           },
           {
             title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/Fabdulla1/DeepPast/tree/main",
-              },
-            ],
+            items: [],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Deep Past Initiative`,
