@@ -49,6 +49,7 @@ const config = {
         docs: {
           routeBasePath: "challenge",
           sidebarPath: "./sidebars.js",
+          breadcrumbs: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Fabdulla1/DeepPast/tree/main",
