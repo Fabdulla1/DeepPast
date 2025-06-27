@@ -44,7 +44,7 @@ export default function SidebarLinks() {
       <h2 className="text-xl font-bold mb-4">Get Started</h2>
       <div className="flex flex-wrap gap-4">
         {sidebarLinks.map((link) => (
-          <SidebarLink {...link} />
+          <SidebarLink key={link.to} {...link} />
         ))}
       </div>
     </div>
