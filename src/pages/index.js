@@ -16,7 +16,8 @@ export default function Home() {
           {/* Story */}
           <Highlight
             title="Deep Past Challenge"
-            description="Unlock the deep past of Mesopotamia"
+            subtitle="Unlock the deep past of Mesopotamia"
+            desc="The Deep Past Challenge is a machine learning and language translation competition unlocking the 4,000-year-old trade records of Assyrian vendors."
             link="/challenge/intro"
             imageUrl={useBaseUrl("/img/tablet.jpg")}
           />

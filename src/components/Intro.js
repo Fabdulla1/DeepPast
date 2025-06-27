@@ -61,7 +61,7 @@ export function Hero() {
           <span className="opacity-80 md:opacity-60">
             The Deep Past Challenge is a machine learning and language
             translation competition unlocking the 4,000-year-old trade records
-            of Assyrian merchants. Thousands of cuneiform texts remain
+            of Assyrian vendors. Thousands of cuneiform texts remain
             untranslated—help us bring their stories to light.
           </span>
           <br />

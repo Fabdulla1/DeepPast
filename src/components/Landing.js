@@ -42,7 +42,7 @@ export function Hero() {
   return (
     <div className="mainTitle mx-auto z-20 w-full max-w-screen-2xl relative mb-12">
       <div className="md:pt-20 pt-8 mb-4">
-        <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[90%] transition-opacity">
+        <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[110%] transition-opacity">
           <div className="max-w-3xl">Unearth the Ancient Voices</div>
           <div
             className={`flex flex-col text-3xl max-w-2xl md:text-5xl drop-shadow-lg py-3 space-y-2 ${
@@ -55,7 +55,7 @@ export function Hero() {
             <span>Reimagine the Past</span>
           </div>
         </h1>
-        <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
+        <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[140%] tracking-tight">
           <span className="opacity-80 md:opacity-60">
             The Deep Past Initiative is...
           </span>

@@ -74,6 +74,16 @@
   }
 }
 
+.highlightContainer {
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(
+        rgba(28, 26, 29, 0.8),
+        rgba(28, 26, 29, 0.8)
+      ),
+      url("/img/tablet-cover.jpg") !important;
+  }
+}
+
 .docs-doc-id-intro {
   & .theme-doc-sidebar-container.docSidebarContainer_YfHR {
     position: absolute;
