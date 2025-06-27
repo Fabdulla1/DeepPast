@@ -25,7 +25,7 @@ const NavBtn = ({ text, subtitle, to }) => {
           </svg>
         </div>
         {subtitle && (
-          <div className="text-sm max-w-40 text-gray-100 dark:text-gray-400 opacity-80 -mt-1">
+          <div className="text-sm max-w-lg text-gray-100 dark:text-gray-400 opacity-80 -mt-1">
             {subtitle}
           </div>
         )}
