@@ -108,8 +108,17 @@ const config = {
             items: [
               {
                 label: "Challenge",
-                to: "/challenge/intro",
+                to: "/deeppast/challenge/intro",
               },
+              {
+                label: "Data",
+                to: "/deeppast/challenge/data/akkadian",
+
+              },
+              {
+                label: "Tutorials",
+                to: "/deeppast/challenge/tutorials/dataset_accessibility",
+              }
             ],
           },
           {
