@@ -5,6 +5,7 @@ import { useColorMode } from "@docusaurus/theme-common";
 import "../css/custom.scss";
 import Story from "./Story";
 import SidebarLinks from "./SidebarLinks";
+import BottomLinks from "./BottomLinks";
 
 export function LeftShadow() {
   const { colorMode } = useColorMode();
@@ -45,7 +46,7 @@ export function Hero() {
     <div className="mainTitle mx-auto z-20 relative mb-12">
       <div className="md:pt-20 pt-8 mb-4">
         <h1 className="text-5xl md:text-7xl font-black !mb-4 tracking-tight mix-blend-exclusion !leading-[110%] transition-opacity">
-          <div className="max-w-3xl">Unearth the Ancient Voices</div>
+          <div className="max-w-3xl">Unearth Ancient Voices</div>
           <div
             className={`flex flex-col text-3xl max-w-2xl md:text-5xl drop-shadow-lg py-3 space-y-2 ${
               colorMode === "dark"
@@ -114,6 +115,9 @@ export default function Intro() {
         </div>
       </section>
       <Story />
+      <div className="max-w-screen-2xl m-auto w-full px-6">
+        <BottomLinks />
+      </div>
     </div>
   );
 }
