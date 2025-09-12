@@ -1,5 +1,8 @@
 # Website
 
+**Deployment:** In GitHub → Settings → Pages → Build and deployment → Source = GitHub Actions.
+Custom domain remains www.deeppast.org with Enforce HTTPS enabled.
+
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
