@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 
 const sidebarLinks = [
   {
-    to: "/challenge/overview",
+    to: "https://www.kaggle.com",
     title: "🏛️ Overview",
     desc: "Embark on a journey through time to unlock the secrets of ancient Mesopotamian trade records and help decode 4,000-year-old mysteries!",
     accent: "amber",
@@ -22,18 +22,26 @@ function BottomLink({ to, title, desc }) {
     >
       {/* Background with ancient tablet texture */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-amber-950 dark:via-orange-950 dark:to-yellow-950"
+        className={`absolute inset-0 ${
+          colorMode === "dark" 
+            ? "bg-gradient-to-br from-amber-950 via-orange-950 to-yellow-950"
+            : "bg-gradient-to-br from-amber-200 via-orange-200 to-yellow-200"
+        }`}
         style={{
           backgroundImage: `
-            radial-gradient(circle at 20% 50%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-            url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23${colorMode === "dark" ? "d97706" : "f59e0b"}' fill-opacity='0.05'%3E%3Cpath d='M20 20c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-8 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm16 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z'/%3E%3C/g%3E%3C/svg%3E")
+            radial-gradient(circle at 20% 50%, rgba(251, 191, 36, ${colorMode === "dark" ? "0.1" : "0.2"}) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, ${colorMode === "dark" ? "0.1" : "0.2"}) 0%, transparent 50%),
+            url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23${colorMode === "dark" ? "d97706" : "b45309"}' fill-opacity='${colorMode === "dark" ? "0.05" : "0.1"}'%3E%3Cpath d='M20 20c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-8 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm16 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z'/%3E%3C/g%3E%3C/svg%3E")
           `,
         }}
       />
       
       {/* Glowing border effect */}
-      <div className="absolute inset-0 rounded-2xl border-2 border-amber-300/30 dark:border-amber-600/30 group-hover:border-amber-400/60 dark:group-hover:border-amber-500/60 transition-all duration-500" />
+      <div className={`absolute inset-0 rounded-2xl border-2 transition-all duration-500 ${
+        colorMode === "dark"
+          ? "border-amber-600/30 group-hover:border-amber-500/60"
+          : "border-amber-500/50 group-hover:border-amber-600/80"
+      }`} />
       
       {/* Content */}
       <div className="relative h-full p-8 flex flex-col justify-between">

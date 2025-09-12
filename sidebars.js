@@ -18,34 +18,9 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
 
   // But you can create a sidebar manually
+  // Only including intro page - other docs were deleted
   mainSideBar: [
     { type: "doc", id: "intro" },
-    { type: "doc", id: "overview" },
-    {
-      type: "category",
-      label: "Data",
-      items: [
-        { type: "doc", id: "data/akkadian" },
-        { type: "doc", id: "data/english" },
-        { type: "doc", id: "data/unicode" },
-        { type: "doc", id: "data/images" },
-      ],
-    },
-    {
-      type: "category",
-      label: "Tutorials",
-      items: [
-        { type: "doc", id: "tutorials/dataset_accessibility" },
-        { type: "doc", id: "tutorials/sparql_queries" },
-        { type: "doc", id: "tutorials/dataset_conversion" },
-        { type: "doc", id: "tutorials/format_conversion_tools" },
-        { type: "doc", id: "tutorials/hugging_face_models" },
-        { type: "doc", id: "tutorials/text_annotation" },
-      ],
-    },
-    { type: "doc", id: "legacy" },
-    { type: "doc", id: "faq" },
-    { type: "doc", id: "team" },
     {
       type: "link",
       label: "Discord",

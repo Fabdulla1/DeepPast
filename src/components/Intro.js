@@ -76,19 +76,19 @@ export default function Intro() {
   const { colorMode } = useColorMode();
 
   const lightGradient = `
-      linear-gradient(to bottom, rgba(198, 198, 198, 0.3) 0%, #ffffff 90%),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 80%)
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%, rgba(255, 255, 255, 1) 100%),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 20%, rgba(255, 255, 255, 0.1) 80%)
     `;
 
   const darkGradient = `
-      linear-gradient(to bottom, rgba(28, 26, 29, 0.3) 0%, #1C1A1D 90%),
-      linear-gradient(90deg, rgba(28, 26, 29, 0.8) 20%, rgba(28, 26, 29, 0) 80%)
+      linear-gradient(to bottom, rgba(28, 26, 29, 0.1) 0%, rgba(28, 26, 29, 0.1) 95%, #1C1A1D 100%),
+      linear-gradient(90deg, rgba(28, 26, 29, 0.6) 20%, rgba(28, 26, 29, 0.1) 80%)
     `;
 
   return (
     <div>
       <section
-        className={`relative min-h-screen mb-24 md:mb-36 px-6 ${
+        className={`relative h-[100vh] px-6 ${
           colorMode === "dark" ? "text-white" : "text-black"
         }`}
         style={{
@@ -97,14 +97,13 @@ export default function Intro() {
             url(${useBaseUrl("/img/tower_of_babel.png")})
           `,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className="max-w-screen-2xl m-auto w-full">
           <Hero />
           <LeftShadow />
-          <SidebarLinks />
           <div className="relative pt-8 mb-4 mt-20 z-10">
             <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
               <span id="our-story" className=" opacity-80 md:opacity-60">

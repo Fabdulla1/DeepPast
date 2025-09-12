@@ -43,7 +43,9 @@ const Highlight = ({ title, subtitle, desc, link, imageUrl }) => {
             </div>
           </div>
           
-          <h3 className="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">
+          <h3 className={`text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg ${
+            colorMode === "dark" ? "text-white" : "text-gray-900"
+          }`}>
             {title}
           </h3>
           
@@ -59,7 +61,9 @@ const Highlight = ({ title, subtitle, desc, link, imageUrl }) => {
             {subtitle}
           </h4>
           
-          <p className="text-lg text-gray-200 dark:text-gray-300 max-w-md mb-8 leading-relaxed drop-shadow-md">
+          <p className={`text-lg max-w-md mb-8 leading-relaxed drop-shadow-md ${
+            colorMode === "dark" ? "text-gray-300" : "text-gray-800"
+          }`}>
             {desc}
           </p>
           
