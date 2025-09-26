@@ -85,6 +85,11 @@ export function Hero() {
           <span id="our-story" className=" opacity-80 md:opacity-60">
             About ↓
           </span>
+          <span className="ml-4 opacity-80 md:opacity-60">
+            <a href="#our-team" className="hover:opacity-100 transition-opacity">
+              Team ↓
+            </a>
+          </span>
         </p>
     </div>
   );

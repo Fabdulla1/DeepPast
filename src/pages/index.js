@@ -5,15 +5,16 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import "../css/custom.scss";
 import Highlight from "../components/Highlight";
 import Landing from "../components/Landing";
+import Team, { Partners } from "../components/Team";
 
 export default function Home() {
   return (
     <Layout>
       <div className="">
         <div className="z-20 relative">
-          {/* Hero */}
+          {/* Hero and About */}
           <Landing />
-          {/* Story */}
+          {/* Highlight Section */}
           <Highlight
             title="Deep Past Challenge"
             subtitle="Unlock the deep past of Mesopotamia"
@@ -21,6 +22,10 @@ export default function Home() {
             link="/challenge/intro"
             imageUrl={useBaseUrl("/img/tablet.jpg")}
           />
+          {/* Team Section */}
+          <Team />
+          {/* Partners Section */}
+          <Partners />
         </div>
       </div>
     </Layout>
