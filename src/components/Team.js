@@ -179,7 +179,7 @@ export function Partners() {
   ];
 
   return (
-    <section className="mb-24 md:mb-36 px-6 bg-gradient-to-b from-gray-50 to-transparent dark:from-gray-900 dark:to-transparent">
+    <section id="our-partners" className="mb-24 md:mb-36 px-6 bg-gradient-to-b from-gray-50 to-transparent dark:from-gray-900 dark:to-transparent">
       <div className="w-full max-w-screen-2xl mx-auto z-30 relative">
         <div className="flex flex-col pt-8 md:pt-16">
           <h1 className="text-3xl md:text-6xl font-black !mb-5 leading-none tracking-tighter mb">

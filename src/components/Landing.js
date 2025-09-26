@@ -64,7 +64,7 @@ export function Hero() {
           <div className="opacity-60">
             <div className={`text-2xl font-bold ${
               colorMode === "dark" ? "text-yellow-400" : "text-amber-700"
-            }`}>25,000+</div>
+            }`}>22,000+</div>
             <div className="text-sm tracking-wide">Ancient Tablets</div>
           </div>
           <div className="opacity-60">
@@ -88,6 +88,11 @@ export function Hero() {
           <span className="ml-4 opacity-80 md:opacity-60">
             <a href="#our-team" className="hover:opacity-100 transition-opacity">
               Team ↓
+            </a>
+          </span>
+          <span className="ml-4 opacity-80 md:opacity-60">
+            <a href="#our-partners" className="hover:opacity-100 transition-opacity">
+              Partners ↓
             </a>
           </span>
         </p>
