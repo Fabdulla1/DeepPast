@@ -166,11 +166,6 @@ const config = {
             label: "Challenge",
           },
           {
-            to: "/blog",
-            label: "News & Updates",
-            position: "left",
-          },
-          {
             href: "https://discord.gg/XtCMyTrVCF",
             label: "Community",
             position: "right",
@@ -200,10 +195,6 @@ const config = {
           {
             title: "Resources",
             items: [
-              {
-                label: "News & Updates",
-                to: "/blog",
-              },
               {
                 label: "Team",
                 href: "https://www.deeppast.org/#team",
