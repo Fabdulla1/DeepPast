@@ -27,7 +27,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Fabdulla1", // Usually your GitHub org/user name.
+  organizationName: "Deep Past Initiative", // Usually your GitHub org/user name.
   projectName: "DeepPast", // Usually your repo name.
 
   onBrokenLinks: "throw",
