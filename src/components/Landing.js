@@ -122,7 +122,7 @@ export default function Landing() {
         style={{
           backgroundImage: `
               ${colorMode === "dark" ? darkGradient : lightGradient},
-              url(${useBaseUrl("/img/tower_of_babel.png")})
+              url(${useBaseUrl("/img/bg_image.jpg")})
             `,
           backgroundSize: "cover",
           backgroundPosition: "center top",

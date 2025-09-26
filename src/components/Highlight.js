@@ -23,7 +23,7 @@ const Highlight = ({ title, subtitle, desc, link, imageUrl }) => {
       <div 
         className="absolute inset-0 opacity-30 dark:opacity-20"
         style={{
-          backgroundImage: `url(${useBaseUrl("/img/tablet-cover.jpg")})`,
+          backgroundImage: `url(${useBaseUrl("/img/h_card.jpg")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

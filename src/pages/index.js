@@ -20,7 +20,7 @@ export default function Home() {
             subtitle="Unlock the deep past of Mesopotamia"
             desc="The Deep Past Challenge is a machine learning and language translation competition unlocking the 4,000-year-old trade records of Assyrian vendors."
             link="/challenge/intro"
-            imageUrl={useBaseUrl("/img/tablet.jpg")}
+            imageUrl={useBaseUrl("/img/h_card(1).png")}
           />
           {/* Team Section */}
           <Team />
