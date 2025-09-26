@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Deep Past Initiative",
-  tagline: "Win Prizes. Make History.",
+  title: "Deep Past Initiative - Ancient Document Digitization Challenge",
+  tagline: "Win Prizes. Make History. Join the Global Challenge to Digitize Ancient Cuneiform Tablets.",
   favicon: "img/dpi_logo.JPG",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -78,6 +78,73 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // SEO Metadata
+      metadata: [
+        {
+          name: 'description', 
+          content: 'Join the Deep Past Initiative to help digitize 22,000+ ancient cuneiform tablets. Compete globally, win prizes, and contribute to preserving human history through innovative crowdsourcing technology.'
+        },
+        {
+          name: 'keywords',
+          content: 'cuneiform tablets, ancient history, digitization, crowdsourcing, archaeology, mesopotamia, babylonian, assyrian, historical preservation, global challenge, academic research'
+        },
+        {
+          name: 'author',
+          content: 'Deep Past Initiative'
+        },
+        {
+          name: 'robots',
+          content: 'index, follow'
+        },
+        {
+          name: 'googlebot',
+          content: 'index, follow, snippet, archive'
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:site_name',
+          content: 'Deep Past Initiative'
+        },
+        {
+          property: 'og:title',
+          content: 'Deep Past Initiative - Ancient Document Digitization Challenge'
+        },
+        {
+          property: 'og:description',
+          content: 'Join the global challenge to digitize 22,000+ ancient cuneiform tablets. Win prizes while preserving human history through crowdsourcing technology.'
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.deeppast.org'
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.deeppast.org/img/dpi_logo.JPG'
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:site',
+          content: '@deeppast'
+        },
+        {
+          name: 'twitter:title',
+          content: 'Deep Past Initiative - Ancient Document Digitization Challenge'
+        },
+        {
+          name: 'twitter:description',
+          content: 'Join the global challenge to digitize ancient cuneiform tablets. Win prizes while preserving human history.'
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://www.deeppast.org/img/dpi_logo.JPG'
+        }
+      ],
       colorMode: {
         defaultMode: "dark", // Start in dark mode by default
         disableSwitch: false, // Allow users to toggle between modes
@@ -98,17 +165,52 @@ const config = {
             position: "left",
             label: "Challenge",
           },
+          {
+            to: "/blog",
+            label: "News & Updates",
+            position: "left",
+          },
+          {
+            href: "https://discord.gg/XtCMyTrVCF",
+            label: "Community",
+            position: "right",
+          },
         ],
       },
       footer: {
         style: "light",
         links: [
           {
-            title: "Pages",
+            title: "Challenge",
             items: [
               {
-                label: "Challenge",
+                label: "Challenge Overview",
                 to: "/challenge/intro",
+              },
+              {
+                label: "About the Initiative",
+                to: "/challenge/about-deep-past-initiative",
+              },
+              {
+                label: "How to Participate",
+                to: "/challenge/how-to-participate",
+              },
+            ],
+          },
+          {
+            title: "Resources",
+            items: [
+              {
+                label: "News & Updates",
+                to: "/blog",
+              },
+              {
+                label: "Team",
+                href: "https://www.deeppast.org/#team",
+              },
+              {
+                label: "Partners",
+                href: "https://www.deeppast.org/#partners",
               },
             ],
           },
@@ -117,7 +219,7 @@ const config = {
             items: [
               {
                 label: "Email",
-                href: "mailto: awl@deeppast.org",
+                href: "mailto:awl@deeppast.org",
               },
             ],
           },

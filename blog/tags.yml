@@ -17,3 +17,28 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+announcement:
+  label: Announcements
+  permalink: /announcements
+  description: Official announcements from the Deep Past Initiative
+
+cuneiform:
+  label: Cuneiform
+  permalink: /cuneiform
+  description: Posts about cuneiform tablets and ancient writing systems
+
+ancient-history:
+  label: Ancient History
+  permalink: /ancient-history
+  description: Content related to ancient civilizations and historical preservation
+
+digitization:
+  label: Digitization
+  permalink: /digitization
+  description: Technology and methods for digitizing historical artifacts
+
+crowdsourcing:
+  label: Crowdsourcing
+  permalink: /crowdsourcing
+  description: Collaborative approaches to historical research and preservation

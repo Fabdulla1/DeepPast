@@ -9,48 +9,55 @@ const team = [
     name: "Gojko Barjamovic",
     title: "Member of the Board",
     imageURL: "img/pfp/gojko.jpg",
-    href: "#",
+    href: "https://nelc.yale.edu/people/gojko-barjamovic",
+    linkType: "website",
   },
   {
     name: "Agnete Lassen",
     title: "Member of the Board",
     imageURL: "img/pfp/agnete.jpg",
-    href: "#",
+    href: "https://www.linkedin.com/in/agnete-wisti-lassen-a048a4112/",
+    linkType: "linkedin",
   },
   {
     name: "Ruchir Agarwal",
     title: "Member of the Board",
     imageURL: "img/pfp/ruchir.jpg",
-    href: "#",
+    href: "https://sites.google.com/site/ruchiragarwal",
+    linkType: "website",
   },
   {
     name: "Adam Anderson",
     title: "Prize Administrator",
     imageURL: "img/pfp/adam_anderson.png",
-    href: "#",
+    href: "https://www.linkedin.com/in/adam-anderson-58a67658/",
+    linkType: "linkedin",
   },
   {
     name: "Farhan Abdulla",
     title: "Data Scientist",
     imageURL: "img/pfp/farhan_abdulla.jpg",
-    href: "#",
+    href: "https://www.linkedin.com/in/farhan-abdulla/",
+    linkType: "linkedin",
   },
   {
     name: "Ed Stanford",
     title: "Research Fellow",
     imageURL: "img/pfp/ed_stratford.jpg",
-    href: "#",
+    href: "https://www.linkedin.com/in/edwardstratford/",
+    linkType: "linkedin",
   },
   {
     name: "Taha Yurttaş",
     title: "Research Assistant",
     imageURL: "img/pfp/Taha_Yurttas.jpg",
-    href: "#",
+    href: "https://nelc.fas.harvard.edu/people/taha-yurttas",
+    linkType: "website",
   },
 ];
 
 const Card = ({ person }) => (
-  <div className="group cursor-pointer">
+  <div className="group">
     <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-lg transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50">
       <div className="relative">
         {person.imageURL ? (
@@ -81,6 +88,30 @@ const Card = ({ person }) => (
         <p className="text-sm md:text-base font-medium text-gray-600 dark:text-gray-300 opacity-70">
           {person.title}
         </p>
+        {/* Social/Website Link */}
+        {person.href && person.href !== "#" && (
+          <div className="pt-2">
+            <a
+              href={person.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-yellow-500 hover:bg-yellow-600 dark:bg-yellow-600 dark:hover:bg-yellow-500 text-white transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg"
+              title={person.linkType === 'linkedin' ? 'View LinkedIn Profile' : 'Visit Website'}
+            >
+              {person.linkType === 'linkedin' ? (
+                // LinkedIn Icon
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              ) : (
+                // Website Icon
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
+                </svg>
+              )}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   </div>

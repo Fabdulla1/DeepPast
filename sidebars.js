@@ -18,12 +18,25 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
 
   // But you can create a sidebar manually
-  // Only including intro page - other docs were deleted
   mainSideBar: [
-    { type: "doc", id: "intro" },
+    { 
+      type: "doc", 
+      id: "intro",
+      label: "Challenge Overview"
+    },
+    { 
+      type: "doc", 
+      id: "about",
+      label: "About the Initiative"
+    },
+    { 
+      type: "doc", 
+      id: "how-to-participate",
+      label: "How to Participate"
+    },
     {
       type: "link",
-      label: "Discord",
+      label: "Join Discord Community",
       href: "https://discord.gg/XtCMyTrVCF",
     },
   ],

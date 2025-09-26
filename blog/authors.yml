@@ -18,6 +18,13 @@ slorber:
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/all-sebastien-lorber-articles'
+
+deeppast:
+  name: Deep Past Initiative Team
+  title: Ancient History Digitization Experts
+  url: https://www.deeppast.org
+  image_url: /img/dpi_logo.JPG
+  page: true
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber
