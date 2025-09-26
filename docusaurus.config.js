@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Deep Past Initiative",
   tagline: "Win Prizes. Make History.",
-  favicon: "img/dpi_logo.jpg",
+  favicon: "img/dpi_logo.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -84,12 +84,12 @@ const config = {
         respectPrefersColorScheme: false, // Don't auto-detect from system, use our default
       },
       // Replace with your project's social card
-      image: "img/dpi_logo.jpg",
+      image: "img/dpi_logo.svg",
       navbar: {
         title: "Deep Past Initiative",
         logo: {
           alt: "Deep Past Logo",
-          src: "img/dpi_logo.jpg",
+          src: "img/dpi_logo.svg",
         },
         items: [
           {
