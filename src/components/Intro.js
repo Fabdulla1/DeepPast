@@ -97,7 +97,7 @@ export default function Intro() {
             url(${useBaseUrl("/img/bg_image.jpg")})
           `,
           backgroundSize: "cover",
-          backgroundPosition: "center top",
+          backgroundPosition: "center 60%",
           backgroundRepeat: "no-repeat",
         }}
       >
