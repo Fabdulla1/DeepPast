@@ -6,17 +6,10 @@ import "../css/custom.scss";
 // Team data for Deep Past Initiative
 const team = [
   {
-    name: "Gojko Barjamovic",
-    title: "Member of the Board",
-    imageURL: "img/pfp/gojko.jpg",
-    href: "https://nelc.yale.edu/people/gojko-barjamovic",
-    linkType: "website",
-  },
-  {
-    name: "Agnete Lassen",
-    title: "Member of the Board",
-    imageURL: "img/pfp/agnete.jpg",
-    href: "https://www.linkedin.com/in/agnete-wisti-lassen-a048a4112/",
+    name: "Farhan Abdulla",
+    title: "Data Scientist",
+    imageURL: "img/pfp/farhan_abdulla.jpg",
+    href: "https://www.linkedin.com/in/farhan-abdulla/",
     linkType: "linkedin",
   },
   {
@@ -34,10 +27,17 @@ const team = [
     linkType: "linkedin",
   },
   {
-    name: "Farhan Abdulla",
-    title: "Data Scientist",
-    imageURL: "img/pfp/farhan_abdulla.jpg",
-    href: "https://www.linkedin.com/in/farhan-abdulla/",
+    name: "Gojko Barjamovic",
+    title: "Member of the Board",
+    imageURL: "img/pfp/gojko.jpg",
+    href: "https://nelc.yale.edu/people/gojko-barjamovic",
+    linkType: "website",
+  },
+  {
+    name: "Agnete Lassen",
+    title: "Member of the Board",
+    imageURL: "img/pfp/agnete.jpg",
+    href: "https://www.linkedin.com/in/agnete-wisti-lassen-a048a4112/",
     linkType: "linkedin",
   },
   {
@@ -188,9 +188,9 @@ export default function Team() {
 export function Partners() {
   const partners = [
     {
-      name: "Kaggle",
-      link: "https://www.kaggle.com/",
-      logo: "https://www.kaggle.com/static/images/site-logo.svg",
+      name: "Founder's Pledge",
+      link: "https://www.founderspledge.com/",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Founders_Pledge_logo.png",
     },
     {
       name: "Global Talent Fund",
@@ -198,9 +198,9 @@ export function Partners() {
       logo: "https://cdn.prod.website-files.com/667539b43fb596c83ded3ca2/6723e5c178e9f352bde27c68_GTF-LOGO.svg",
     },
     {
-      name: "Founder's Pledge",
-      link: "https://www.founderspledge.com/",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Founders_Pledge_logo.png",
+      name: "Kaggle",
+      link: "https://www.kaggle.com/",
+      logo: "https://www.kaggle.com/static/images/site-logo.svg",
     },
     {
       name: "TokenWorks LLC",

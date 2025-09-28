@@ -34,9 +34,9 @@ const Highlight = ({ title, subtitle, desc, link, imageUrl }) => {
       
       <div className="absolute inset-0 rounded-2xl border-2 border-amber-300/30 dark:border-amber-600/30" />
     
-      <div className="relative flex flex-row flex-wrap justify-around p-8 md:p-12 gap-x-10 gap-y-10 min-h-[400px]">
-        <div className="relative flex flex-col text-center md:justify-start md:text-left md:max-w-md">
-          <div className="flex items-center justify-center md:justify-start mb-4">
+      <div className="relative flex flex-row flex-wrap justify-center p-8 md:p-12 gap-x-10 gap-y-10 min-h-[400px]">
+        <div className="relative flex flex-col text-center md:justify-start md:text-center md:max-w-2xl">
+          <div className="flex items-center justify-center mb-4">
             <div className="relative">
               <span className="text-4xl mr-3 filter drop-shadow-lg">🏛️</span>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-amber-400 rounded-full animate-ping"></div>
@@ -61,30 +61,19 @@ const Highlight = ({ title, subtitle, desc, link, imageUrl }) => {
             {subtitle}
           </h4>
           
-          <p className={`text-lg max-w-md mb-8 leading-relaxed drop-shadow-md ${
+          <p className={`text-lg max-w-2xl mb-8 leading-relaxed drop-shadow-md mx-auto ${
             colorMode === "dark" ? "text-gray-300" : "text-gray-800"
           }`}>
             {desc}
           </p>
           
-          <div className="mt-auto">
+          <div className="mt-auto flex justify-center">
             <NavBtn
               text="Get Started"
               subtitle="Work with real tablet data to uncover the Past!"
               to={link}
             />
           </div>
-        </div>
-        <div className="relative w-full md:w-2/5 h-80 md:h-96">
-          <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent rounded-xl" />
-          <img 
-            className="w-full h-full object-cover rounded-xl shadow-2xl" 
-            src={imageUrl} 
-            alt={title}
-          />
-          
-          <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-amber-400/60 dark:border-amber-500/60 opacity-70" />
-          <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-amber-400/60 dark:border-amber-500/60 opacity-70" />
         </div>
       </div>
     </div>
