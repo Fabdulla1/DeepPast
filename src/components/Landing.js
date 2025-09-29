@@ -169,7 +169,7 @@ export function About() {
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
-                <p>challenging coders through competitions to develop machine learning tools that deciphers and reads the largest 
+                <p>challenging coders through competitions to develop machine learning tools that decipher and read the largest 
                 written dataset surviving from the ancient world - clay tablets, inscribed in the world's first system of writing, the cuneiform script</p>
               </div>
               <div className="flex items-start space-x-3">
