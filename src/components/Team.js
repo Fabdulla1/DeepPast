@@ -30,7 +30,7 @@ const team = [
     name: "Gojko Barjamovic",
     title: "Member of the Board",
     imageURL: "img/pfp/gojko.jpg",
-    href: "https://nelc.yale.edu/people/gojko-barjamovic",
+    href: "#",
     linkType: "website",
   },
   {
@@ -51,7 +51,7 @@ const team = [
     name: "Taha Yurttaş",
     title: "Research Assistant",
     imageURL: "img/pfp/Taha_Yurttas.jpg",
-    href: "https://nelc.fas.harvard.edu/people/taha-yurttas",
+    href: "#",
     linkType: "website",
   },
 ];
