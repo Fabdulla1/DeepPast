@@ -204,10 +204,6 @@ const config = {
                 label: "Email",
                 href: "mailto:awl@deeppast.org",
               },
-              {
-                label: "234 Front st, New Haven CT 06513",
-                href: "https://www.google.com/maps/search/?api=1&query=234+Front+st,+New+Haven+CT+06513",
-              },
             ],
           },
           {
@@ -246,7 +242,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Deep Past Initiative`,
+        copyright: `Copyright © ${new Date().getFullYear()} Deep Past Initiative<br/><a href="https://www.google.com/maps/search/?api=1&query=234+Front+st,+New+Haven+CT+06513" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">234 Front st, New Haven CT 06513</a>`,
       },
       prism: {
         theme: prismThemes.github,
