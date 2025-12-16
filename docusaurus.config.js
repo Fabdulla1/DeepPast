@@ -204,6 +204,10 @@ const config = {
                 label: "Email",
                 href: "mailto:awl@deeppast.org",
               },
+              {
+                label: "234 Front st, New Haven CT 06513",
+                href: "https://www.google.com/maps/search/?api=1&query=234+Front+st,+New+Haven+CT+06513",
+              },
             ],
           },
           {
