@@ -41,7 +41,7 @@ const team = [
     linkType: "linkedin",
   },
   {
-    name: "Ed Stanford",
+    name: "Ed Stratford",
     title: "Research Fellow",
     imageURL: "img/pfp/ed_stratford.jpg",
     href: "https://www.linkedin.com/in/edwardstratford/",
@@ -53,6 +53,11 @@ const team = [
     imageURL: "img/pfp/Taha_Yurttas.jpg",
     href: "#",
     linkType: "website",
+  },
+  {
+    name: "Andrew Deloucas",
+    title: "Communications Specialist",
+    imageURL: "img/pfp/andrew_deloucas.jpeg",
   },
 ];
 
@@ -188,19 +193,24 @@ export default function Team() {
 export function Partners() {
   const partners = [
     {
+      name: "XTX Markets",
+      link: "https://www.xtxmarkets.com/",
+      logo: "/img/XTX_partner.jpg",
+    },
+    {
       name: "Founder's Pledge",
       link: "https://www.founderspledge.com/",
       logo: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Founders_Pledge_logo.png",
     },
     {
-      name: "Global Talent Fund",
-      link: "https://www.globtalent.org/",
-      logo: "https://cdn.prod.website-files.com/667539b43fb596c83ded3ca2/6723e5c178e9f352bde27c68_GTF-LOGO.svg",
-    },
-    {
       name: "Kaggle",
       link: "https://www.kaggle.com/",
       logo: "https://www.kaggle.com/static/images/site-logo.svg",
+    },
+    {
+      name: "Global Talent Fund",
+      link: "https://www.globtalent.org/",
+      logo: "https://cdn.prod.website-files.com/667539b43fb596c83ded3ca2/6723e5c178e9f352bde27c68_GTF-LOGO.svg",
     },
     {
       name: "TokenWorks LLC",

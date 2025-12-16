@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 
 const sidebarLinks = [
   {
-    to: "https://www.kaggle.com",
+    to: "https://www.kaggle.com/competitions/deep-past-initiative-machine-translation",
     title: "🏛️ Overview",
     desc: "Embark on a journey through time to unlock the secrets of ancient Mesopotamian trade records and help decode 4,000-year-old mysteries!",
     accent: "amber",
