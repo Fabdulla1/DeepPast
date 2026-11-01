@@ -23,7 +23,7 @@ export default function Home() {
           <Highlight
             title="Deep Past Challenge"
             subtitle="Unlock the deep past of Mesopotamia"
-            desc="The Deep Past Challenge is a machine learning and language translation competition unlocking the 4,000-year-old trade records of Assyrian vendors."
+            desc="The Deep Past Challenges are translation and sign recognition prize competitions unlocking 4,000-year old trade records of Assyrian vendors."
             link="/challenge/intro"
             imageUrl={useBaseUrl("/img/cuneiform-tablet-highlight-card.png")}
           />

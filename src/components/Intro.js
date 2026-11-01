@@ -60,8 +60,8 @@ export function Hero() {
         </h1>
         <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[140%] tracking-tight">
           <span className="opacity-80 md:opacity-60">
-            The Deep Past Challenge is a machine learning and language
-            translation competition unlocking the 4,000-year-old trade records
+            The Deep Past Challenges are translation and sign recognition 
+            prize competitions unlocking 4,000-year old trade records 
             of Assyrian vendors. Thousands of cuneiform texts remain
             untranslated—help us bring their stories to light.
           </span>
@@ -88,7 +88,7 @@ export default function Intro() {
   return (
     <div>
       <section
-        className={`relative h-[100vh] px-6 ${
+        className={`relative h-[85vh] px-6 ${
           colorMode === "dark" ? "text-white" : "text-black"
         }`}
         style={{
